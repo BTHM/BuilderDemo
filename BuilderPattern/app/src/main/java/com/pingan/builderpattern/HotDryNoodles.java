@@ -5,14 +5,14 @@ package com.pingan.builderpattern;
  * Author：liupeng264 on 2016/11/14 15:22
  * Address：liupeng264@pingan.com.cn
  */
-public class HotDryNoodlesWithBuilder {
+public class HotDryNoodles {
     private boolean addShallot;//加葱花
     private boolean addParsley;// 香菜
     private boolean addChili;  //辣椒
     private boolean addSauerkraut;//酸菜
 
     //Director
-    public HotDryNoodlesWithBuilder(Builder builder) {
+    public HotDryNoodles(Builder builder) {
 
         this.addShallot = builder.addShallot;
         this.addParsley = builder.addParsley;
@@ -82,8 +82,8 @@ public class HotDryNoodlesWithBuilder {
         /**--- ConcreateBuilder end --**/
 
 
-        public HotDryNoodlesWithBuilder build() {
-            return new HotDryNoodlesWithBuilder(this);
+        public HotDryNoodles build() {
+            return new HotDryNoodles(this);
         }
     }
 }

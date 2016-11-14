@@ -12,13 +12,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         // with builder
-        HotDryNoodlesWithBuilder noodlesC = new HotDryNoodlesWithBuilder.Builder()
+        HotDryNoodles noodlesC = new HotDryNoodles.Builder()
                 .withChili()
                 .withParsley()
                 .build();
         System.out.println("Customer C wants: " + noodlesC);
 
-        HotDryNoodlesWithBuilder noodlesD = new HotDryNoodlesWithBuilder.Builder()
+        HotDryNoodles noodlesD = new HotDryNoodles.Builder()
                 .withChili()
                 .withParsley()
                 .withSauerkraut()
