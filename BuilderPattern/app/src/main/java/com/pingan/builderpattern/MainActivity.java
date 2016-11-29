@@ -25,5 +25,6 @@ public class MainActivity extends AppCompatActivity {
                 .withShallot()
                 .build();
         System.out.println("Customer D wants: " + noodlesD);
+        //提交测试
     }
 }
